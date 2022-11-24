@@ -1,0 +1,125 @@
+.page-header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--basic-background);
+}
+
+.page-header__main-logo {
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    padding: 12px 56px;
+    font-size: 20px;
+    box-shadow: 0 5px 0 darkred;
+    margin-right: 17px;
+}
+
+.page-header__search {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.page-header__menu {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: var(--basic-blue);
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: 46px;
+}
+
+.page-header__menu-left-side {
+    flex-grow: 1;
+}
+
+.page-header__menu-left-side svg {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.page-header__bookmark {
+    margin-right: 50px;
+}
+
+.page-header__basket {
+    margin-right: 26px;
+}
+
+.page-header__span {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__span svg {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 9px;
+}
+
+.page-header__order {
+    padding: 16px 9px;
+    background-color: var(--basic-green);
+}
+
+.page-header__online-store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.online-store__title {
+    font-size: 16px;
+    line-height: 23px;
+    color: var(--basic-red);
+    font-style: italic;
+    font-family: serif;
+    text-transform: lowercase;
+    margin: 0;
+    margin-right: 93px;
+}
+.online-store__address {
+    text-align: center;
+    margin-right: 69px;
+}
+.online-store__location {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.authorization__button {
+    padding: 12px 24px;
+    background-color: var(--white);
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+.authorization__button svg {
+    color: #C5C5C5;
+}
+.online-store__login {
+    margin-right: 10px;
+}
+
+.page-header__navigation {
+    margin-bottom: 60px;
+}
+
+.page-header__navigation-list {
+    background-color: var(--navigation-color);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 16px 53px;
+    text-transform: capitalize;
+    color: var(--white);
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.page-header__navigation-items:not(:last-child) {
+    margin-right: 56px;
+}

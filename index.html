@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Техномарт</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
-    <div class="visually-hidden">
+    <div class="visually-hidden sprites">
         <svg>
             <symbol id="book-mark" viewBox="0 0 14 16" fill="none">
                 <path fill="currentColor"
@@ -169,102 +169,129 @@
 
         </svg>
     </div>
-    <header class="page__header">
-        <div class="page__menu">
-            <a class="page__main-logo" href="">
-                Техномарт
-            </a>
-            <input type="page__search" placeholder="поиск:">
-            <span class="page__bookmark">Закладки: 0</span>
-            <span class="page__basket">Корзина: 0</span>
-            <a class="page__order" href="">оформить заказ</a>
+
+    <header class="page-header">
+        <div class="page-header__menu">
+            <div class="page-header__menu-left-side">
+                <a class="page-header__main-logo" href="">Техномарт</a>
+                <svg width="17" height="17">
+                    <use xlink:href="#search"></use>
+                </svg>
+                <input class="page-header__search" placeholder="Поиск:">
+            </div>
+            <span class="page-header__span page-header__bookmark">
+                <svg width="14" height="16">
+                    <use xlink:href="#book-mark"></use>
+                </svg>
+                Закладки: 0
+            </span>
+            <span class="page-header__span page-header__basket">
+                <svg width="15" height="15">
+                    <use xlink:href="#trash"></use>
+                </svg>
+                Корзина: 0
+            </span>
+            <a class="page-header__order" href="">Oформить заказ</a>
         </div>
 
-        <div class="page__online-store">
-            <h1 class="page__online-store-title">Интернет-магазин <br> строительных материалов <br> и инструментов для
-                ремонта</h1>
-            <address class="page__online-store-address">
-                <a class="page__phone" href="tel:78005558628">+7 800 555-86-28</a>
-                <p class="page__location">
+        <div class="page-header__online-store online-store">
+            <h1 class="online-store__title">
+                Интернет-магазин <br>
+                строительных материалов <br>
+                и инструментов для ремонта
+            </h1>
+            <address class="online-store__address">
+                <a class="online-store__call" href="tel:78005558628">
+                    +7 800 555-86-28
+                </a>
+                <p class="online-store__location">
                     г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
                 </p>
-                <a class="page__login" href="">войти</a>
-                <a class="page__sign-up" href="">регистрация</a>
             </address>
+            <div class="authorization">
+                <a class="authorization__button online-store__login" href="">
+                    <svg width="21" height="17">
+                        <use xlink:href="#login"></use>
+                    </svg>
+                    войти
+                </a>
+                <a class="authorization__button online-store__sign-up" href="">регистрация</a>
+            </div>
         </div>
 
-        <nav class="page__navigation">
-            <ul class="page__navigation-list">
-                <li class="page__navigation-item"><a href="">главная</a></li>
-                <li class="page__navigation-item"><a href="">компания</a></li>
-                <li class="page__navigation-item"><a href="">каталог</a></li>
-                <li class="page__navigation-item"><a href="">новости</a></li>
-                <li class="page__navigation-item"><a href="">спецпредложения</a></li>
-                <li class="page__navigation-item"><a href="">доставка</a></li>
-                <li class="page__navigation-item"><a href="">контакты</a></li>
+        <nav class="page-header__navigation content-center">
+            <ul class="page-header__navigation-list">
+                <li class="page-header__navigation-items"><a href="">главная</a></li>
+                <li class="page-header__navigation-items"><a href="">компания</a></li>
+                <li class="page-header__navigation-items"><a href="">каталог</a></li>
+                <li class="page-header__navigation-items"><a href="">новости</a></li>
+                <li class="page-header__navigation-items"><a href="">спецпредложения</a></li>
+                <li class="page-header__navigation-items"><a href="">доставка</a></li>
+                <li class="page-header__navigation-items"><a href="">контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="page__main">
-        <h1>Товары</h1>
-        <ul>
-            <li>
-                <h2>материалы</h2>
-                <p>на любой вкус</p>
+    <main class="page-main">
+        <h1 class="page-main__title">Товары</h1>
+
+        <ul class="page-main__list">
+            <li class="page-main__items">
+                <h2 class="page-main__items-title">материалы</h2>
+                <p class="page-main__items-description">на любой вкус</p>
             </li>
-            <li>
-                <h2>инструмент</h2>
-                <p>на все случаи</p>
+            <li class="page-main__items">
+                <h2 class="page-main__items-title">инструмент</h2>
+                <p class="page-main__items-description">на все случаи</p>
             </li>
-            <li>
-                <h2>техника</h2>
-                <p>для стройки</p>
+            <li class="page-main__items">
+                <h2 class="page-main__items-title">техника</h2>
+                <p class="page-main__items-description">для стройки</p>
             </li>
-            <li>
-                <h2>скидки 50%</h2>
-                <p>на 350 товаров</p>
+            <li class="page-main__items">
+                <h2 class="page-main__items-title">скидки 50%</h2>
+                <p class="page-main__items-description">на 350 товаров</p>
             </li>
-            <li>
-                <h2>доставка</h2>
-                <p>бесплатно</p>
+            <li class="page-main__items">
+                <h2 class="page-main__items-title">доставка</h2>
+                <p class="page-main__items-description">бесплатно</p>
             </li>
-            <li>
-                <h2>перфораторы</h2>
-                <p>настоящие мужские игрушки</p>
-                <a href="">открыть каталог</a>
+            <li class="page-main__items">
+                <h2 class="page-main__items-title">перфораторы</h2>
+                <p class="page-main__items-description">настоящие мужские игрушки</p>
+                <a class="page-main__items--opencatalog" href="">открыть каталог</a>
             </li>
         </ul>
 
-        <section>
-            <h2>популярные товары:</h2>
-            <button>все популярные товары</button>
+        <section class="popular-product">
+            <h2 class="popular-product__title">популярные товары:</h2>
+            <button class="popular-product__button">все популярные товары</button>
 
-            <ul>
-                <li>
-                    <h3>Перфоратор BOSC <br> HBFG 9000</h3>
-                    <del>32500 Р.</del>
-                    <a href="">25500 Р.</a>
+            <ul class="popular-product__list">
+                <li class="popular-product__items">
+                    <h3 class="popular-product__items-title">Перфоратор BOSC <br> HBFG 9000</h3>
+                    <del class="popular-product__items-delete">32500 Р.</del>
+                    <a class="popular-product__items-price" href="">25500 Р.</a>
                 </li>
-                <li>
-                    <h3>Перфоратор BOSCH <br> BFG 3000</h3>
-                    <del>22500 Р.</del>
-                    <a href="">15500 Р.</a>
+                <li class="popular-product__items">
+                    <h3 class="popular-product__items-title">Перфоратор BOSCH <br> BFG 3000</h3>
+                    <del class="popular-product__items-delete">22500 Р.</del>
+                    <a class="popular-product__items-price" href="">15500 Р.</a>
                 </li>
-                <li>
-                    <h3>Перфоратор BOSCH <br> BFG 6000</h3>
-                    <del>30500 Р.</del>
-                    <a href="">25500 Р.</a>
+                <li class="popular-product__items">
+                    <h3 class="popular-product__items-title">Перфоратор BOSCH <br> BFG 6000</h3>
+                    <del class="popular-product__items-delete">30500 Р.</del>
+                    <a class="popular-product__items-price" href="">25500 Р.</a>
                 </li>
-                <li>
-                    <h3>Перфоратор BOSC <br> HBFG 2000</h3>
-                    <del>22500 Р.</del>
-                    <a href="">12500 Р.</a>
+                <li class="popular-product__items">
+                    <h3 class="popular-product__items-title">Перфоратор BOSC <br> HBFG 2000</h3>
+                    <del class="popular-product__items-delete">22500 Р.</del>
+                    <a class="popular-product__items-price" href="">12500 Р.</a>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Популярные производители:</h2>
+        <section class="popular-builder">
+            <h2 class="">Популярные производители:</h2>
             <button>все производители:</button>
             <ul>
                 <li>
@@ -294,7 +321,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="service">
             <h2>Сервисы</h2>
             <p>
                 Хороший интернет-магазин отличается от плохого не только ценами! <br>
@@ -351,7 +378,7 @@
         </section>
     </main>
 
-    <footer class="page__footer">
+    <footer class="page-main__footer">
         <header>
             <a href="">Техномарт</a>
             <ul>
@@ -362,7 +389,7 @@
                 <li>контакты</li>
             </ul>
         </header>
-        
+
         <main>
             <address>
                 <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
