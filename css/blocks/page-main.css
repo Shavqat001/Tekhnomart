@@ -78,6 +78,9 @@
     grid-row: 2 / 4;
     position: relative;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .slider .top-side {
@@ -135,4 +138,28 @@
     position: absolute;
     top: 5px;
     right: -30px;
+}
+
+.page-main__items--opencatalog {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--basic-red);
+    text-align: center;
+    padding: 11px 46px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+    margin-left: 24px;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px 0 24px;
+}
+
+#buttons>svg:last-child {
+    transform: rotate(180deg);
 }
