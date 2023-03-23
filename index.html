@@ -236,102 +236,112 @@
     </header>
 
     <main class="page-main">
-        <h1 class="page-main__title visually-hidden">Товары</h1>
+        <section class="goods">
+            <h2 class="goods__title visually-hidden">Товары</h2>
 
-        <ul class="page-main__list">
-            <li class="page-main__items materials">
-                <div>
-                    <h2 class="page-main__items-title">материалы</h2>
-                    <p class="page-main__items-description">на любой вкус</p>
-                </div>
-                <svg width="44" height="65">
-                    <use xlink:href="#dye"></use>
-                </svg>
-                <span class="new">NEW</span>
-            </li>
-            <li class="page-main__items tools">
-                <div>
-                    <h2 class="page-main__items-title">инструмент</h2>
-                    <p class="page-main__items-description">на все случаи</p>
-                </div>
-                <svg width="75" height="61">
-                    <use xlink:href="#perforator"></use>
-                </svg>
-            </li>
-            <li class="page-main__items technique">
-                <div>
-                    <h2 class="page-main__items-title">техника</h2>
-                    <p class="page-main__items-description">для стройки</p>
-                </div>
-                <svg width="78" height="62">
-                    <use xlink:href="#tractor"></use>
-                </svg>
-            </li>
-            <li class="page-main__items discounts">
-                <div>
-                    <h2 class="page-main__items-title">скидки 50%</h2>
-                    <p class="page-main__items-description">на 350 товаров</p>
-                </div>
-                <svg width="59" height="72">
-                    <use xlink:href="#basket"></use>
-                </svg>
-            </li>
-            <li class="page-main__items delivery">
-                <div>
-                    <h2 class="page-main__items-title">доставка</h2>
-                    <p class="page-main__items-description">бесплатно</p>
-                </div>
-                <svg width="78" height="63">
-                    <use xlink:href="#delivery"></use>
-                </svg>
-            </li>
-            <li class="page-main__items slider">
-                <div class="top-side">
-                    <h2 class="top-side__title">перфораторы</h2>
-                    <p class="top-side__description">Настоящие мужские игрушки</p>
-                </div>
-                <img class="picture" src="./img/master.png" width="620" height="266"
-                    alt="Craftsman with puncher in hand">
-                <div id="buttons">
-                    <svg width="23" height="41">
-                        <use xlink:href="#left"></use>
+            <ul class="goods__list">
+                <li class="goods__items materials">
+                    <div>
+                        <h2 class="goods__items-title">материалы</h2>
+                        <p class="goods__items-description">на любой вкус</p>
+                    </div>
+                    <svg width="44" height="65">
+                        <use xlink:href="#dye"></use>
                     </svg>
-                    <svg width="23" height="41">
-                        <use xlink:href="#left"></use>
+                    <span class="new">NEW</span>
+                </li>
+                <li class="goods__items tools">
+                    <div>
+                        <h2 class="goods__items-title">инструмент</h2>
+                        <p class="goods__items-description">на все случаи</p>
+                    </div>
+                    <svg width="75" height="61">
+                        <use xlink:href="#perforator"></use>
                     </svg>
-                </div>
-                <div id="slides">
-                    <span></span>
-                    <span></span>
-                </div>
-                <a class="page-main__items--opencatalog" href="">открыть каталог</a>
-            </li>
-        </ul>
+                </li>
+                <li class="goods__items technique">
+                    <div>
+                        <h2 class="goods__items-title">техника</h2>
+                        <p class="goods__items-description">для стройки</p>
+                    </div>
+                    <svg width="78" height="62">
+                        <use xlink:href="#tractor"></use>
+                    </svg>
+                </li>
+                <li class="goods__items discounts">
+                    <div>
+                        <h2 class="goods__items-title">скидки 50%</h2>
+                        <p class="goods__items-description">на 350 товаров</p>
+                    </div>
+                    <svg width="59" height="72">
+                        <use xlink:href="#basket"></use>
+                    </svg>
+                </li>
+                <li class="goods__items delivery">
+                    <div>
+                        <h2 class="goods__items-title">доставка</h2>
+                        <p class="goods__items-description">бесплатно</p>
+                    </div>
+                    <svg width="78" height="63">
+                        <use xlink:href="#delivery"></use>
+                    </svg>
+                </li>
+                <li class="goods__items slider">
+                    <div class="top-side">
+                        <h2 class="top-side__title">перфораторы</h2>
+                        <p class="top-side__description">Настоящие мужские игрушки</p>
+                    </div>
+                    <img class="picture" src="./img/master.png" width="620" height="266"
+                        alt="Craftsman with puncher in hand">
+                    <div id="buttons">
+                        <svg width="23" height="41">
+                            <use xlink:href="#left"></use>
+                        </svg>
+                        <svg width="23" height="41">
+                            <use xlink:href="#left"></use>
+                        </svg>
+                    </div>
+                    <div id="slides">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a class="goods__items--opencatalog" href="">открыть каталог</a>
+                </li>
+            </ul>
+        </section>
 
         <section class="popular-product">
-            <h2 class="popular-product__title">популярные товары:</h2>
-            <button class="popular-product__button">все популярные товары</button>
+            <header class="popular-product__header">
+                <h2 class="popular-product__title">популярные товары:</h2>
+                <button class="popular-product__button">все популярные товары</button>
+            </header>
 
             <ul class="popular-product__list">
                 <li class="popular-product__items">
                     <h3 class="popular-product__items-title">Перфоратор BOSC <br> HBFG 9000</h3>
+                    <img src="./img/perf9000.png" width="184" height="164" alt="">
                     <del class="popular-product__items-delete">32500 Р.</del>
                     <a class="popular-product__items-price" href="">25500 Р.</a>
                 </li>
                 <li class="popular-product__items">
                     <h3 class="popular-product__items-title">Перфоратор BOSCH <br> BFG 3000</h3>
+                    <img src="./img/perf3000.png" width="127" height="112" alt="">
                     <del class="popular-product__items-delete">22500 Р.</del>
                     <a class="popular-product__items-price" href="">15500 Р.</a>
+                    <span class="new">new</span>
                 </li>
                 <li class="popular-product__items">
                     <h3 class="popular-product__items-title">Перфоратор BOSCH <br> BFG 6000</h3>
+                    <img src="./img/perf6000.png" width="144" height="128" alt="">
                     <del class="popular-product__items-delete">30500 Р.</del>
                     <a class="popular-product__items-price" href="">25500 Р.</a>
                 </li>
                 <li class="popular-product__items">
                     <h3 class="popular-product__items-title">Перфоратор BOSC <br> HBFG 2000</h3>
+                    <img src="./img/perf2000.png" width="127" height="112" alt="">
                     <del class="popular-product__items-delete">22500 Р.</del>
                     <a class="popular-product__items-price" href="">12500 Р.</a>
+                    <span class="new">new</span>
                 </li>
             </ul>
         </section>

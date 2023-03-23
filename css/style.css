@@ -10,3 +10,6 @@
 @import url('./blocks/page.css');
 @import url('./blocks/page-header.css');
 @import url('./blocks/page-main.css');
+@import url('./blocks/goods.css');
+@import url('./blocks/popular-product.css');
+@import url('./blocks/popular-manufacturers.css');
