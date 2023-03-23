@@ -1,13 +1,15 @@
 .page {
     display: flex;
-    font-family: sans-serif;
+    font-family: 'Cuprum', sans-serif;
 }
+
 .page__body {
     max-width: 1200px;
     max-height: 3151px;
     margin: auto;
     display: grid;
 }
+
 .content-center {
     margin: 0 auto;
 }

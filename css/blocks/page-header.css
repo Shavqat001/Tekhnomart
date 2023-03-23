@@ -71,20 +71,38 @@
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
-    font-style: italic;
-    font-family: serif;
-    text-transform: lowercase;
     margin: 0;
     margin-right: 93px;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
+
 .online-store__address {
     text-align: center;
     margin-right: 69px;
 }
+
+.online-store__call {
+    color: var(--basic-red);
+    font-size: 21px;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 3px solid #FFFFFF;
+    padding: 7px 50px 8px 39px;
+}
+
+.online-store__call>svg {
+    margin-right: 16px;
+    color: #B7BFC8;
+}
+
 .online-store__location {
     font-size: 14px;
     line-height: 24px;
     margin: 0;
+    margin-top: 10px;
 }
 
 .authorization__button {
@@ -94,9 +112,11 @@
     line-height: 21px;
     text-transform: capitalize;
 }
+
 .authorization__button svg {
     color: #C5C5C5;
 }
+
 .online-store__login {
     margin-right: 10px;
 }
