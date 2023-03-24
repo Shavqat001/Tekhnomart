@@ -7,9 +7,27 @@
     max-width: 1200px;
     max-height: 3151px;
     margin: auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-center {
     margin: 0 auto;
+}
+
+.red-button {
+    background-color: var(--basic-red);
+    text-transform: uppercase;
+    color: var(--white);
+    border: none;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 11px 50px 9px 50px;
+    min-width: 192px;
+    max-width: 220px;
+    min-height: 38px;
+    max-height: 38px;
+    font-style: normal;
 }

@@ -1,0 +1,22 @@
+.company-technomart {
+    display: flex;
+    padding: 70px 130px;
+    width: 1200px;
+    position: relative;
+    left: -130px;
+}
+
+.company {
+    flex-grow: 1;
+}
+
+.company__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.company--about {
+    width: 220px;
+}
