@@ -343,92 +343,100 @@
                     <a class="popular-product__items-price" href="">12500 Р.</a>
                     <span class="new">new</span>
                 </li>
+
             </ul>
         </section>
         <section class="popular-builders">
-            <h2 class="popular-builders__title">Популярные производители:</h2>
-            <button class="popular-builders__button">все производители:</button>
+            <header class="popular-builders__header">
+                <h2 class="popular-builders__title">Популярные производители:</h2>
+                <button class="popular-builders__button">все производители:</button>
+            </header>
             <ul class="popular-builders__list">
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/126x37" alt="">
+                    <img src="./img/bosch.png" width="126" height="37" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/123x40" alt="">
+                    <img src="./img/Makita.png" width="123" height="40" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/146x44" alt="">
+                    <img src="./img/DeWALT.png" width="146" height="44" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/200x76" alt="">
+                    <img src="./img/Интерскол 1.png" width="200" height="76" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/169x31" alt="">
+                    <img src="./img/Hitachi.png" width="169" height="31" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/121x73" alt="">
+                    <img src="./img/LG.png" width="121" height="73" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/151x98" alt="">
+                    <img src="./img/AEG.png" width="151" height="98" alt="">
                 </li>
                 <li class="popular-builders__item">
-                    <img src="https://via.placeholder.com/204x69" alt="">
+                    <img src="./img/Metabo.png" width="204" height="69" alt="">
                 </li>
             </ul>
         </section>
 
         <section class="service">
-            <h2>Сервисы</h2>
-            <p>
-                Хороший интернет-магазин отличается от плохого не только ценами! <br>
-                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
-            <div class="delivery">
-                <ul>
-                    <li>доставка</li>
-                    <li>гарантия</li>
-                    <li>кредит</li>
+            <div>
+                <h2 class="service__title">Сервисы</h2>
+                <p class="service__description">
+                    Хороший интернет-магазин отличается от плохого не только ценами! <br>
+                    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+                </p>
+            </div>
+            <div>
+                <ul class="service__list">
+                    <li class="service__item">доставка</li>
+                    <li class="service__item">гарантия</li>
+                    <li class="service__item">кредит</li>
                 </ul>
 
-                <h3>Доставка</h3>
-                <p>
-                    Мы с удовольствием доставим ваш товар прямо <br>
-                    к вашему подъезду совершенно бесплатно! <br>
-                    Ведь мы неплохо заработаем, <br>
-                    поднимая его на ваш этаж!
-                </p>
+                <div class="delivery-part">
+                    <h3 class="delivery-part__title">Доставка</h3>
+
+                    <p class="delivery-part__description">
+                        Мы с удовольствием доставим ваш товар прямо <br>
+                        к вашему подъезду совершенно бесплатно! <br>
+                        Ведь мы неплохо заработаем, <br>
+                        поднимая его на ваш этаж!
+                    </p>
+                </div>
+                <img src="./img/truck.png" width="468" height="261" alt="">
             </div>
         </section>
 
-        <section>
+        <section class="company-technomart">
             <div class="company">
-                <h2>КОМПАНИЯ <q>Техномарт</q></h2>
-                <p>
+                <h2 class="company__title">КОМПАНИЯ <q>Техномарт</q></h2>
+                <p class="company__description">
                     Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br> ремонта и строительства
                     не
                     оставит равнодушными любителей сэкономить на <br> гастарбайтерах.
                 </p>
-                <p>
+                <p class="company__description">
                     Мы можем доставить ваш товар в самые отдаленные точки России! <br>
                     Техномарт работает со многими транспортными компаниями:
                 </p>
 
-                <ul>
-                    <li>деловые линии</li>
-                    <li>автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
+                <ul class="company__list">
+                    <li class="company__item">деловые линии</li>
+                    <li class="company__item">автотрейдинг</li>
+                    <li class="company__item">ЖелДорЭкспедиция</li>
                 </ul>
-                <a href="">Подробнее о компании</a>
-
+                <a class="company--about" href="">Подробнее о компании</a>
             </div>
 
-            <address>
-                <h3>КОНТАКТЫ</h3>
-                <p>
+            <address class="contacts">
+                <h3 class="contacts__title">КОНТАКТЫ</h3>
+                <p class="contacts__description">
                     Вы можете забрать товар сами,
                     заехав в наш офис:
                 </p>
-                <div class="map"></div>
-                <a href="">Заблудились? НапиШИТЕ НАМ!</a>
+                <div class="contacts__map-modal"></div>
+                <a class="contacts__link" href="">Заблудились? НапиШИТЕ НАМ!</a>
             </address>
         </section>
     </main>

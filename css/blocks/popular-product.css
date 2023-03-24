@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 70px;
+    width: 940px;
 }
 
 .popular-product__header {
@@ -34,12 +35,14 @@
 }
 
 .popular-product__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .popular-product__items {
@@ -94,12 +97,4 @@
     max-width: 141px;
     border-radius: 5px 0 0 5px;
     clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
-}
-
-.popular-product__items {
-    margin-bottom: 20px;
-}
-
-.popular-product__items:not(:last-child) {
-    margin-right: 20px;
 }
