@@ -8,15 +8,81 @@
 
 .company {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .company__title {
-    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.company__description {
+    font-size: 13px;
     font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
+    line-height: 24px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.company__description:first-of-type {
+    margin-bottom: 20px;
+}
+
+.company__description:nth-of-type(2) {
+    margin-bottom: 1px;
 }
 
 .company--about {
     width: 220px;
+}
+
+.company__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.company__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-left: 40px;
+}
+
+.company__item::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--basic-red);
+    position: absolute;
+    left: 130px;
+    margin-top: 10px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts__title {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.contacts__description {
+    margin: 0;
+    margin-bottom: 32px;
+    font-style: normal;
+}
+
+.contacts__map-modal {
+    margin-bottom: 25px;
+}
+
+.contacts__link {
+    width: 300px;
 }
