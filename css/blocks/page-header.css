@@ -60,6 +60,8 @@
 .page-header__order {
     padding: 16px 9px;
     background-color: var(--basic-green);
+    width: 150px;
+    text-align: center;
 }
 
 .page-header__online-store {
