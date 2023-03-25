@@ -25,11 +25,10 @@
     font-weight: 400;
     text-align: center;
     padding: 11px 50px 9px 50px;
-    min-width: 300px;
-    max-width: 220px;
     height: 38px;
     max-height: 38px;
     font-style: normal;
+    cursor: pointer;
 }
 
 .titles {

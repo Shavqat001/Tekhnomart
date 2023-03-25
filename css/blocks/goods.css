@@ -1,6 +1,7 @@
 .goods {
     margin-bottom: 59px;
 }
+
 .goods__list {
     padding: 0;
     margin: 0;
@@ -39,7 +40,7 @@
     margin-bottom: 14px;
 }
 
-.goods__items-description {
+.goods__items-button {
     background: #FFF3;
     padding: 10px 23px;
     line-height: 18px;
@@ -49,6 +50,8 @@
     max-width: 136px;
     text-transform: uppercase;
     text-align: center;
+    border: none;
+    height: 38px;
 }
 
 .materials {
@@ -158,6 +161,11 @@
     padding: 0 20px 0 24px;
 }
 
-#buttons>svg:last-child {
+#buttons>button {
+    background-color: transparent;
+    border: none;
+}
+
+#buttons>button:last-child {
     transform: rotate(180deg);
 }

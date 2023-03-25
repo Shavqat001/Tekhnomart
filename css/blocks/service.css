@@ -88,9 +88,5 @@
     color: var(--white);
     width: 240px;
     text-transform: capitalize;
-}
-
-.service__item:nth-child(1) {
-    background-color: #fff;
-    color: #000;
+    cursor: pointer;
 }

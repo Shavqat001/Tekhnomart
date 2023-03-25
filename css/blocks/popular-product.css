@@ -50,13 +50,14 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 38px;
     padding-bottom: 21px;
     width: 220px;
     max-width: 220px;
     border: 1px solid #EAEAEA;
     justify-content: center;
     align-items: center;
+    height: 318px;
 }
 
 .popular-product__items>img {
@@ -97,4 +98,38 @@
     max-width: 141px;
     border-radius: 5px 0 0 5px;
     clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+}
+
+.buy, .bookmarks {
+    width: 135px;
+    height: 38px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--white);
+    border: none;
+    font-weight: 400;
+    border-radius: 4px;
+    line-height: 18px;
+}
+
+.buy {
+    color: var(--white);
+    border-bottom: 3px solid green;
+    background: #63A63E;
+    margin-bottom: 10px;
+}
+
+.buy svg {
+    margin-right: 5px;
+    color: #fff5;
+}
+
+.bookmarks {
+    color: #32425C;
+    border: 3px solid #63A63E;
+    margin-bottom: 54px;
 }
